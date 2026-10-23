@@ -1,0 +1,111 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: rgb(15, 194, 243);
+    display: flex;
+    height: 100vh ;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+header h1{
+    color: rgb(103, 182, 213);
+    margin: 20px;
+    font-size: 25px;
+}
+header{
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,.1);
+    height: 50px;
+}
+
+.search input{
+    width: 300px;
+    background-color: rgb(234, 230, 230);
+    height: 30px;
+    box-shadow: 8px 8px 10px -5px rgba(0,0,0,.1);
+    border: none;
+    border-radius: 10px;
+}
+
+.city{
+    display: flex;
+    justify-content: center ;
+    margin: 20px;
+    gap: 100px;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+.temperature h1{
+    font-size: 70px;
+}
+.temperature h2{
+    font-size: 150px;
+}
+.otherinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.otherinfo div{
+    height: 100px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.city button{
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    width: 60px;
+    background-color: rgb(103, 182, 213);
+}
+
+.city button:hover{
+    cursor: pointer;
+    background-color: rgb(130, 196, 223);
+}
+
+.temperature img{
+    height: 200px;
+}
+
+#offline{
+    position: fixed;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 50px;
+}
+
+.hidden{
+    display: none;
+}
+span{
+    font-size: 100px;
+    color: white;
+}
