@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-sky="clear-day">
+
+    <div class="app" id="container">
+        <header class="top">
+            <h1 class="brand">Weather</h1>
+            <form class="search" id="searchform">
+                <label class="sr-only" for="cityinput">City</label>
+                <input type="search" id="cityinput" placeholder="Search for a city" autocomplete="off" required>
+                <button type="submit">Search</button>
+            </form>
+        </header>
+
+        <p class="status" id="status" role="status">Search for a city to see the current weather.</p>
+
+        <main class="reading hidden" id="reading">
+            <section class="now">
+                <h2 id="cityname"></h2>
+                <p class="temp" id="temp"></p>
+                <p class="desc" id="wind"></p>
+            </section>
+
+            <img class="icon" src="" alt="" id="icon">
+
+            <dl class="stats">
+                <div>
+                    <dt>Humidity</dt>
+                    <dd id="humidity"></dd>
+                </div>
+                <div>
+                    <dt>Feels like</dt>
+                    <dd id="feel"></dd>
+                </div>
+            </dl>
+        </main>
+    </div>
+
+    <div id="offline" class="hidden" role="alert">
+        <span>🌐</span>
+        <p>No internet connection</p>
+        <p class="hint">Reconnect to check the weather.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
